@@ -8,7 +8,7 @@ before_install:
 script:
   - docker run -e CI=true ranggarmaste/docker-react npm run test
 
-docker:
+deploy:
   provider: elasticbeanstalk
   regoin: "us-east-1"
   app: "docker-react"
